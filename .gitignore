@@ -1,3 +1,6 @@
 node_modules/
 notes.js
 .env
+db.js
+server.js
+script.js
