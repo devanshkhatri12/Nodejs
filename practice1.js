@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const p = require('./practice')
+require('dotenv').config()
+const PORT = process.env.PORT || 3000
 
 
 const bodyParser = require('body-parser')
@@ -19,6 +21,7 @@ const studentRouter = require('./Routes/studentRoutes')
 
 app.use('/input1', studentRouter)
 
-app.listen(3000, () => {
+
+app.listen(PORT, () => {
     console.log('listen to the port')
 });
